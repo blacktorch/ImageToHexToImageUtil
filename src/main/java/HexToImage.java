@@ -15,7 +15,6 @@ import static java.awt.image.BufferedImage.TYPE_INT_RGB;
 public class HexToImage {
 
     private BufferedImage outputImage;
-    private String hexFilePath;
     private int width;
     private int height;
     private int conversionType;
@@ -25,7 +24,6 @@ public class HexToImage {
 
     public HexToImage(String hexFilePath, int width, int height, int conversionType) {
         this.outputImage = new BufferedImage(width, height, TYPE_INT_RGB);
-        this.hexFilePath = hexFilePath;
         this.width = width;
         this.height = height;
         this.conversionType = conversionType;
